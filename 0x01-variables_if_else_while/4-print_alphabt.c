@@ -2,7 +2,7 @@
 /*
  * main - entry point
  *
- * description: Print alphabet except q and e
+ * description: Print alphabet except q and e.
  *
  * Return: Always (0) Success
 */

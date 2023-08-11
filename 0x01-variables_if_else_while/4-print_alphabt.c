@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - entry point.
  *
  * Description: C program that print alphabet except q and e.
@@ -16,13 +16,13 @@ int main(void)
 	{
 		if (c[i] == 'e' || c[i] == 'q')
 		{
-			break;
+			i++;
 		}
 		else
 		{
 			putchar(c[i]);
+			i++;
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);

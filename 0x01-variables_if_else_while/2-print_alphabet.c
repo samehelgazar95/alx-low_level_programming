@@ -10,6 +10,7 @@ int main(void)
 {
 	char c[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
+
 	while (i < 26)
 	{
 		putchar(c[i]);

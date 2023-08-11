@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main - entry point
+ * main - entry point.
  *
  * description: Print alphabet except q and e.
  *
@@ -14,10 +14,12 @@ int main(void)
 
 	while (i < 26)
 	{
-		if (c[i] != 'e' || c[i] != 'q')
+		if (c[i] == 'e' || c[i] == 'q')
 		{
-			putchar(c[i]);
+			continue;
 		}
+
+		putchar(c[i]);
 		i++;
 	}
 	putchar('\n');

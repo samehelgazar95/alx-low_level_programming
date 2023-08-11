@@ -2,7 +2,7 @@
 /*
  * main - entry point
  *
- * descripton: Print alphabet except q and e
+ * description: Print alphabet except q and e
  *
  * Return: Always (0) Success
 */
@@ -11,14 +11,14 @@ int main(void)
 {
 	char c[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
-	
+
 	while (i < 26)
 	{
-		if(c[i] != 'q' || c[i] != 'e')
+		if (c[i] != 'e' || c[i] != 'q')
 		{
 			putchar(c[i]);
-			i++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);

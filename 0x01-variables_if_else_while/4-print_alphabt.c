@@ -2,7 +2,7 @@
 /*
  * main - entry point.
  *
- * description: Print alphabet except q and e.
+ * Description: C program that print alphabet except q and e.
  *
  * Return: Always (0) Success
 */
@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (c[i] == 'e' || c[i] == 'q')
 		{
-			continue;
+			break;
 		}
 		else
 		{

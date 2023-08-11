@@ -22,7 +22,7 @@ int main(void)
 
 	while (i < 26)
 	{
-		puchar(C[i]);
+		putchar(C[i]);
 		i++;
 	}
 	putchar('\n');

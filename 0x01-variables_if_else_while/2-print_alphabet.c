@@ -6,8 +6,8 @@
  *
  * Return: Always 0 Success
 */
-nt main(void)
+int main(void)
 {
-	puchar("abcdefghijklmnopqrstuvwxyz")
-	return (0)
+	puchar("abcdefghijklmnopqrstuvwxyz");
+	return (0);
 }

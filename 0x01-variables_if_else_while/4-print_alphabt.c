@@ -14,12 +14,11 @@ int main(void)
 	
 	while (i < 26)
 	{
-		if(c[i] == 'q' || c[i] == 'e')
-			continue;
-
-		putchar(c[i]);
-		i++;
-	}
+		if(c[i] != 'q' || c[i] != 'e')
+		{
+			putchar(c[i]);
+			i++;
+		}
 	putchar('\n');
 	return (0);
 }

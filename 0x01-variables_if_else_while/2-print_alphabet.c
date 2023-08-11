@@ -8,6 +8,6 @@
 */
 int main(void)
 {
-	puchar("abcdefghijklmnopqrstuvwxyz");
+	putchar("abcdefghijklmnopqrstuvwxyz");
 	return (0);
 }

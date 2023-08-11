@@ -17,4 +17,4 @@ int main(void)
 		i++;
 	}
 	return (0);
-i
+}

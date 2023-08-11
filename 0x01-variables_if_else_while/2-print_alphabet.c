@@ -8,6 +8,7 @@
 */
 int main(void)
 {
-	putchar("abcdefghijklmnopqrstuvwxyz");
+	char *c = "abcdefghijklmnopqrstuvwxyz";
+	putchar(c);
 	return (0);
 }

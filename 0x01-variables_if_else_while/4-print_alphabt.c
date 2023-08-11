@@ -18,8 +18,10 @@ int main(void)
 		{
 			continue;
 		}
-
-		putchar(c[i]);
+		else
+		{
+			putchar(c[i]);
+		}
 		i++;
 	}
 	putchar('\n');

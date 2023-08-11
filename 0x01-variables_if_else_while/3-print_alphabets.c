@@ -12,7 +12,7 @@ int main(void)
 	char c[] = "abcdefghijklmnopqrstuvwxyz";
 	char C[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i = 0;
-	
+
 	while (i < 26)
 	{
 		putchar(c[i]);

@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char c = 122;
+	int c = 122;
 
 	while (c <= 97)
 	{

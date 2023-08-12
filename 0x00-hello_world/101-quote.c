@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - entry point
@@ -11,13 +10,9 @@
 
 int main(void)
 {
-	char q[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char q[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	for (int i = 0; i < strlen(q); i++)
-	{
-		putchar(q[i]);
-	}
-	putchar('\n');
+	write(1, q, strlen(q));
 
 	return (1);
 }

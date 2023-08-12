@@ -17,9 +17,9 @@ int main(void)
 		num2 = num1 + 1;
 		while (num2 < 10)
 		{
+			num3 = num2 + 1;
 			while (num3 < 10)
 			{
-				num3 = num2 + 1;
 				putchar(num1 + 48);
 				putchar(num2 + 48);
 				putchar(num3 + 48);

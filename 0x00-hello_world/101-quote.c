@@ -5,7 +5,7 @@
  *
  * description: printing quote with loop
  *
- * return: 1 (not success)
+ * Return: 1 (not success)
 */
 
 int main(void)

@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
  * main - entry point
  *
@@ -13,7 +13,7 @@ int main(void)
 
 	while (c <= 97)
 	{
-		putchat(c);
+		putchar(c);
 		c--;
 	}
 

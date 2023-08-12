@@ -10,14 +10,14 @@
 int main(void)
 {
 	int i = 48;
-	while (i < 102)
+
+	while (i <= 102)
 	{
 		putchar(i);
-		if(i == 57)
+		if (i == 57)
 		{
 			i = 96;
 		}
-		
 		i++;
 	}
 	return (0);

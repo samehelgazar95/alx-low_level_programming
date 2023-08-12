@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - entry point
@@ -12,7 +12,7 @@ int main(void)
 {
 	char q[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	fwrite(1, q, 58);
+	write(1, q, 59);
 
 	return (1);
 }

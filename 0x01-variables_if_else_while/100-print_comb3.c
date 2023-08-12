@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: Write a program that prints all possible different combinations iof two digits
+ * Description: program prints all possible different combinations of two digits
  *
  * Return: 0 (Success)
 */
@@ -19,8 +19,11 @@ int main(void)
 		{
 			putchar(num1 + 48);
 			putchar(num2 + 48);
+			if (num1 + num2 != 17)
+			{
 			putchar(',');
 			putchar(' ');
+			}
 			num2++;
 		}
 		num1++;

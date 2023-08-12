@@ -3,23 +3,27 @@
 /**
  * main - entry point
  *
- * Description: Write a program that prints all possible different combinations of two digits
+ * Description: Write a program that prints all possible different combinations iof two digits
  *
  * Return: 0 (Success)
 */
 
 int main(void)
 {
-	char q[] = "0123456789";	
-	for (int i = 0; i < strlen(q); i++)
+	int num1 = 0, num2;
+
+	while (num1 < 10)
 	{
-		for (int j = i + 1; j < strlen(q); j++)
+		num2 = num1 + 1;
+		while (num2 < 10)
 		{
-			putchar(q[i]);
-			putchar(q[j]);
+			putchar(num1 + 48);
+			putchar(num2 + 48);
 			putchar(',');
 			putchar(' ');
+			num2++;
 		}
+		num1++;
 	}
 	putchar('\n');
 	return (0);

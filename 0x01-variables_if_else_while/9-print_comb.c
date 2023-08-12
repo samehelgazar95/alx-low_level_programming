@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * description: 
+ * description: print combinations of single digits
  *
  * Return: Always (0) Success
 */
@@ -17,6 +17,7 @@ int main(void)
 		putchar(i + '0');
 		putchar(',');
 		putchar(' ');
+		i++;
 	}
 	putchar('\n');
 

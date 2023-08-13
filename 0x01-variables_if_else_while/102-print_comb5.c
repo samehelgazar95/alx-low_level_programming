@@ -5,7 +5,7 @@
  *
  * description: prints all possible combinations of two two-digit numbers
  *
- * return: 0 (Success)
+ * Return: 0 (Success)
 */
 
 int main(void)
@@ -24,7 +24,7 @@ int main(void)
 				putchar(' ');
 				putchar(n2 / 10 + 48);
 				putchar(n2 % 10 + 48);
-				if (n1 != 98 || n2 != 99)
+				if (n1 != 98 && n2 != 99)
 				{
 					putchar(',');
 					putchar(' ');

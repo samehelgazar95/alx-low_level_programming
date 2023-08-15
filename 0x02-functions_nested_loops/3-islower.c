@@ -15,6 +15,6 @@ int _islower(int c)
 	}
 	else if (c >= 'A' && '0')
 	{
-		putchar(0 + '0')
+		putchar(0 + '0');
 	}
 }

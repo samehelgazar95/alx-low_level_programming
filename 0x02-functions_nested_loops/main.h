@@ -13,4 +13,6 @@ int _islower(int c);
 
 int _abs(int);
 
+int _isalpha(int c);
+
 #endif

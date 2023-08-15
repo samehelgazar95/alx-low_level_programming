@@ -5,13 +5,21 @@
  *
  * @r: param to check for
  *
- * Return: @r % 10
+ * Return: last digit
 */
 
 int print_last_digit(int r)
 {
-	r = _abs(r) % 10;
+	int digit;
 
-	_putchar('0' + r);
-	return (r);
-}
+	if (digit < 0)
+	{
+		digit = (r % 10) * -1;
+	}
+	else
+	{
+		digit = r;
+	}
+	_putchar(digit + '0');
+	return (digit);
+et

@@ -14,7 +14,7 @@ void jack_bauer(void)
 	while (hr <= 24)
 	{
 		min = 0;
-		
+
 		while (min <= 59)
 		{
 			_putchar(hr / 10 + '0');

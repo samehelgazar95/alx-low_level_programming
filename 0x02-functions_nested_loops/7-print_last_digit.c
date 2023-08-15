@@ -22,4 +22,4 @@ int print_last_digit(int r)
 	}
 	_putchar(digit + '0');
 	return (digit);
-et
+}

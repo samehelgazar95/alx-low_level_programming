@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * description: printing quote with loop
+ * Description: printing quote with loop
  *
  * Return: 1 (not success)
 */

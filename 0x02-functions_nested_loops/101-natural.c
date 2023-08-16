@@ -7,19 +7,16 @@
 
 int main(void)
 {
-	int three = 0, five = 0, sum, i;
+	int sum, num;
 
-	for (i = 0; i < 1024; i += 3)
+	for (num = 0; num < 1024; num++)
 	{
-		three += i;
+		if ((num % 3 == 0) || (num % 5 == 0))
+		{
+			sum += num;
+		}
 	}
 
-	for (i = 0; i < 1024; i += 5)
-	{
-		five += i;
-	}
-
-	sum = three + five;
 	printf("%d\n", sum);
 
 	return (0);

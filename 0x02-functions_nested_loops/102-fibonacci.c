@@ -1,35 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - entry point.
  *
+ * Description: prints the first 50 Fibonacci numbers
  * Return: 0 (Success)
 */
 
 int main(void)
 {
-	int fib(int n)
-	{
-		if (n == 0)
-		{
-			return (1);
-		}
-		else if (n == 1)
-		{
-			return (2);
-		}
-		else
-		{
-			return (fib(n - 1) + fib(n - 2));
-		}
-	}
-
+	unsigned long n1 = 0, n2 = 1, n3;
 	int i;
 
 	for (i = 0; i < 50; i++)
 	{
-		printf("%d, \n", fib(i));
-	}
+		n3 = n1 + n2;
+		n1 = n2;
+		n2 = n3;
 
+		printf("%lu", n3);
+		if (i == 49)
+		{
+			putchar('\n');
+		}
+		else
+		{
+			printf(", ");
+		}
+	}
 	return (0);
 }

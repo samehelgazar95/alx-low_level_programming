@@ -2,6 +2,7 @@
 
 /**
  * mul: Multiplies two ints
+ *
  * @a: first int
  * @b: second int
  *

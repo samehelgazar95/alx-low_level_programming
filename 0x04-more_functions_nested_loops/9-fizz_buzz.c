@@ -6,7 +6,7 @@
  * Description: Fizz Buzz Program
  *
  * Return: 0 (Success)
- * */
+*/
 
 int main(void)
 {

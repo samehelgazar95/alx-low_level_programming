@@ -1,5 +1,5 @@
 /**
- * mul: Multiplies two ints
+ * mul - Multiplies two ints
  *
  * @a: first int
  * @b: second int

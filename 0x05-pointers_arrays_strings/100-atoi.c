@@ -19,7 +19,7 @@ int _atoi(char *s)
 		else if (my_int > 0)
 			break;
 
-	} while (*s++)
+	} while (*s++);
 
 	return (my_int * sign);
 }

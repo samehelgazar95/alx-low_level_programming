@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * puts_half - prints half of the string
- * str: the string to be printed
+ * @str: the string to be printed
  * Return: Half of the string
 */
 
@@ -19,7 +19,7 @@ void puts_half(char *str)
 
 	while (str[mid])
 	{
-		_putchar('str[mid]');
+		_putchar(str[mid]);
 		mid++;
 	}
 }

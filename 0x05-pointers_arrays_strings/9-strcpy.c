@@ -1,7 +1,13 @@
 #include "main.h"
 #include <string.h>
 
-/***/
+/**
+ * *_strcpy - copy string to another
+ * @*dest: first array 
+ * @*src: second array
+ *
+ * Return: string
+*/
 
 char *_strcpy(char *dest, char *src)
 {
@@ -12,7 +18,7 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	src[i] = '\0';
+	dest[i] = '\0';
 
 	return (src);
 }

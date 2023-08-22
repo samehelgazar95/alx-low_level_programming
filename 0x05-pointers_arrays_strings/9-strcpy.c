@@ -3,8 +3,8 @@
 
 /**
  * *_strcpy - copy string to another
- * @*dest: first array 
- * @*src: second array
+ * @dest: first array
+ * @src: second array
  *
  * Return: string
 */

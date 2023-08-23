@@ -5,7 +5,6 @@
  * @src: second string
  * @n: number of bytes to add
  *
- *
  * Return: pointer with new string
 */
 

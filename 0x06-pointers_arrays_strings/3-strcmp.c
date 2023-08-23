@@ -9,7 +9,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	unsigned int s1Sum, s2Sum;
-	int i = 0;
+	int i = 0, diff = 0;
 
 	while (s1[i])
 	{
@@ -26,9 +26,9 @@ int _strcmp(char *s1, char *s2)
 	}
 
 	if (s1Sum > s2Sum)
-		return (15);
+		diff = 15;
 	else if (s1Sum < s2Sum)
-		return (-15);
-	else
-		return (0);
+		diff = -15;
+
+	return (diff);
 }

@@ -5,6 +5,7 @@
  * @src: second string
  * @n: number of bytes to add
  *
+ *
  * Return: pointer with new string
 */
 
@@ -26,5 +27,5 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	dest[i] = '\n';
 
-	return (ptr);
+	return (dest);
 }

@@ -39,17 +39,17 @@ int isDelim(char c)
 
 char *cap_string(char *str)
 {
-	int delimeter = 1;
+	int delimeter = 1, i;
 	char *ptr = str;
 
-	while (*str)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (delimeter && isLower(*str))
+		if (delimeter && isLower(str[i]))
 		{
-			*str -= 32;
+			str[i] -= 32;
 			delimeter = 0;
 		}
-		else if (isDelim(*str))
+		else if (isDelim(str[i]))
 		{
 			delimeter = 1;
 		}
@@ -57,7 +57,6 @@ char *cap_string(char *str)
 		{
 			delimeter = 0;
 		}
-		*str++;
 	}
 	return (ptr);
 }

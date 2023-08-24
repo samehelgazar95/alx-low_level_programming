@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * islower - to check if char is lower or not
+ * isLower - to check if char is lower or not
  * @c: char to check
  * Return: 1 for lower , 0 for not lower
 */
@@ -14,7 +14,7 @@ int isLower(char c)
 /**
  * isDelim - to check if char is delimeter or not
  * @c: char to check
- * Return: 1 for delim, 0 for not delim
+ * Return: (1) if delim, (0) if not delim
 */
 
 int isDelim(char c)

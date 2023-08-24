@@ -1,6 +1,6 @@
 /**
  * string_toupper - lower to upper
- * str: string to convert
+ * @str: string to convert
  *
  * Return: string of the converted
 */

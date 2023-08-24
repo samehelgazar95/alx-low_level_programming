@@ -14,7 +14,7 @@ int isLower(char c)
 /**
  * isDelim - to check if char is delimeter or not
  * @c: char to check
- * Return: (1) if delim, (0) if not delim
+ * Return: 1 true, 0 false
 */
 
 int isDelim(char c)

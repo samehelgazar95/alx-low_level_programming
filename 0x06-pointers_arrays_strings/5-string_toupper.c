@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * string_toupper - lower to upper
  * @str: string to convert

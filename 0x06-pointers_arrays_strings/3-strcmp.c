@@ -2,33 +2,16 @@
  * _strcmp - compares two strings.
  * @s1: first string
  * @s2: second string
- *
- * Return: 15 if (s1 > s2), -15 if (s1 < s2), 0 if (s1 == s2)
+ * Return: 1 if true, 0 if false
 */
 
 int _strcmp(char *s1, char *s2)
 {
-	unsigned int s1Sum, s2Sum;
-	int i = 0, diff = 0;
-
-	while (s1[i])
+	while (*s1 == *s2)
 	{
-		s1Sum += s1[i] - '0';
-		i++;
+		if (*s1 == '\0')
+			return (0);
 	}
 
-	i = 0;
-
-	while (s2[i])
-	{
-		s2Sum += s2[i] - '0';
-		i++;
-	}
-
-	if (s1Sum > s2Sum)
-		diff = 15;
-	else if (s1Sum < s2Sum)
-		diff = -15;
-
-	return (diff);
+	return (*s1 - *s2);
 }

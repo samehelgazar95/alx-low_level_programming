@@ -9,7 +9,7 @@ char *string_toupper(char *str)
 {
 	while (*str)
 	{
-		if (*str > 97 && *str < 122)
+		if (*str >= 97 && *str <= 122)
 		{
 			*str -= 32;
 		}

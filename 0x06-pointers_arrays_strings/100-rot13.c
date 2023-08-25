@@ -14,7 +14,7 @@ char *rot13(char *str)
 
 	while (*str)
 	{
-		for (i = 0; i < sizeof(rot) / sizeof(char); i++)
+		for (i = 0; i < 52; i++)
 		{
 			if (*str == rot[i])
 			{

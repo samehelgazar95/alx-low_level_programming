@@ -1,5 +1,5 @@
 /**
- * _memcpy -  copies memory area.
+ * _memcpy-  copies memory area.
  * @dest: destination array
  * @src: array source
  * @n: numer of indecies to copy
@@ -10,6 +10,7 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
+	char *res = dest;
 
 	for (i = 0; i < n; i++)
 	{
@@ -17,5 +18,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest++;
 	}
 
-	return (dest);
+	return (res);
 }

@@ -1,5 +1,5 @@
 /**
- * strspn- function that gets the length of a prefix substring.
+ * _strspn- function that gets the length of a prefix substring.
  * @s: the string param
  * @accept: string to check
  *
@@ -15,7 +15,10 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; accept[j] != s[i]; j++)
 		{
 			if (accept[j] == '\0')
+			{
 				return (i);
+			}
 		}
 	}
+	return (i);
 }

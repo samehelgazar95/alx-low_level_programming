@@ -19,7 +19,7 @@ void print_chessboard(char (*a)[8])
 		}
 		if (i < 7)
 		{
-			_putchar(' ');
+			_putchar('\n');
 		}
 	}
 }

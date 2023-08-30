@@ -17,8 +17,7 @@ void _puts_recursion(char *s)
 		ptr++;
 		_puts_recursion(ptr);
 	}
-
-	if (*ptr == '\0')
+	else
 	{
 		_putchar('\n');
 	}

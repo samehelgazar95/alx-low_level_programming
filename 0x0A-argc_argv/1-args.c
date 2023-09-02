@@ -7,16 +7,17 @@
  * Return: 0 if no args or args counter
 */
 
-int main(int argc,__attribute__((unused)) char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
 	int count = 0;
 
 	if (argc > 1)
 	{
-		for (; count < argc - 1; count++){}
+		for (; count < argc - 1; count++)
+		{}
 		printf("%d\n", count);
 	}
-	else if (argc == 1)
+	else
 	{
 		printf("%d\n", count);
 	}

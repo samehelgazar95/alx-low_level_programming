@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 /**
- * main-
+ * main- printing arg count
+ * @argc: args counter
+ * @argv: args vector
+ * Return: 0 if no args or args counter
 */
 
 int main(int argc,__attribute__((unused)) char *argv[])

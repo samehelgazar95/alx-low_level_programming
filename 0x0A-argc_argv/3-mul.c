@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main- mul two numbers
@@ -9,12 +10,14 @@
 
 int main(int argc, char *argv[])
 {
-	int res, mul;
+	int res, num1, num2;
 
 	if (argc == 3)
 	{
-		mul = (*argv[1] - 48) * (*argv[2] - 48);
-		printf("%d\n", mul);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+
+		printf("%d\n", num1 * num2);
 		res = 0;
 	}
 	else if (argc != 3)

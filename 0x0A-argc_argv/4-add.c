@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		{
 			current =  argv[count];
 
-			while(*current)
+			while (*current)
 			{
 				if (*current < '0' || *current > '9')
 				{

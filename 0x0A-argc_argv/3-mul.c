@@ -9,11 +9,12 @@
 
 int main(int argc, char *argv[])
 {
-	int res;
+	int res, mul;
 
 	if (argc == 3)
 	{
-		printf("%d\n", (*argv[1] - 48) * (*argv[2] - 48));
+		mul = (*argv[1] - 48) * (*argv[2] - 48);
+		printf("%d\n", mul);
 		res = 0;
 	}
 	else if (argc != 3)

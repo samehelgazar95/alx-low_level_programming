@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * str_concat- Concat two strings
@@ -27,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 
 	str = (char *)malloc(sizeof(char) * (len1 + len2) + 1);
 	if (str == NULL)
-		return (NULL);
+		return (0);
 
 	for (len1 = 0; s1[len1] != '\0'; len1++)
 	{

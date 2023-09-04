@@ -9,6 +9,8 @@
 
 char *_strdup(char *str)
 {
+	if (*str == NULL)
+		return (NULL);
 	char *dup;
 	int size;
 

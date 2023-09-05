@@ -18,8 +18,8 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	else
-	{
+
+
 	for (i = 0; i < height; i++)
 	{
 		res[i] = malloc(sizeof(**res) * width);
@@ -38,6 +38,6 @@ int **alloc_grid(int width, int height)
 			res[i][j] = 0;
 		}
 	}
-	}
+
 	return (res);
 }

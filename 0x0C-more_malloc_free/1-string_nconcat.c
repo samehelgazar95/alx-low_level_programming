@@ -26,12 +26,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (secondLen = 0; *s2 != '\0'; secondLen++)
 	{}
 
-	if (n < secondLen)
-		concatedLen = n + firstLen;
-	else
-		concatedLen = secondLen + firstLen;
+	if (n > secondLen)
+		n = secondLen;
 
-	concatedString = (char *)malloc(concatedLen);
+	concatedString = (char *)malloc(concatedLen + 1);
 	if (concatedString == NULL)
 	{
 		return (NULL);
@@ -42,19 +40,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		concatedString[i] = s1[i];
 	}
 
-	if (n < secondLen)
+	for (j = 0; j < n; j++, i++)
 	{
-		for (j = 0; j < n; j++, i++)
-		{
-			concatedString[i] = s2[j];
-		}
-	}
-	else
-	{
-		for (j = 0; j < secondLen; j++, i++)
-                {
-                        concatedString[i] = s2[j];
-                }
+		concatedString[i] = s2[j];
 	}
 
 	concatedString[i] = '\0';

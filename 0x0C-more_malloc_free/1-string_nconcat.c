@@ -34,14 +34,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	concatedString = malloc(concatedLen + 1);
 	if (concatedString == NULL)
+
 	{
 		return (NULL);
 	}
 
 	for (i = 0; s1[i] != '\0'; i++)
-	{
 		concatedString[i] = s1[i];
-	}
 
 	for (j = 0; j < n; j++)
 	{
@@ -50,6 +49,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	concatedString[i] = '\0';
-
 	return (concatedString);
 }

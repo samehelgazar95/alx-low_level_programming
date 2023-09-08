@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _realloc- reallocates a memory block
@@ -28,8 +29,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		if (newPtr == NULL)
 			return (NULL);
 
-		ptr = newPtr;
-		return (ptr);
+		memcpy(newPtr, ptr, old_size);
+		free(ptr);
 	}
 	else if (ptr == NULL)
 	{

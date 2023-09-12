@@ -23,25 +23,21 @@ int _strlen(char *str)
 
 /**
  * strCopyDyn- copy string dynamically
- * @str: the string
+ * @src: the string
+ * @dest: the destination
  * Return: the string or NULL
 */
 
-char *strCopyDyn(char *str)
+char *strCopyDyn(char *src, char *dest)
 {
 	int i;
-	int strLen = _strlen(str);
-	char *temp = malloc(sizeof(char) * strLen + 1);
 
-	if (temp == NULL)
-		return (NULL);
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
 
-	for (i = 0; str[i] != '\0'; i++)
-		temp[i] = str[i];
+	dest[i] = '\0';
 
-	temp[i] = '\0';
-
-	return (temp);
+	return (dest);
 }
 
 /**
@@ -64,14 +60,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = strCopyDyn(name);
+	dog->name = malloc(sizeof(char) * _strlen(name) + 1);
 	if ((*dog).name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
 
-	dog->owner = strCopyDyn(owner);
+	dog->name = strCopyDyn(name, dog->name);
+	dog->owner = malloc(sizeof(char) * _strlen(owner) + 1);
 	if ((*dog).owner == NULL)
 	{
 		free(dog->name);
@@ -79,6 +76,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
+	dog->owner = strCopyDyn(owner, dog->owner);
 	dog->age = age;
 
 	return (dog);

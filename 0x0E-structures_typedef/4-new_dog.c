@@ -67,14 +67,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	dog->name = strCopyDyn(name);
-	if (dog->name == NULL)
+	if ((*dog).name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
 
 	dog->owner = strCopyDyn(owner);
-	if (dog->owner == NULL)
+	if ((*dog).owner == NULL)
 	{
 		free(dog->name);
 		free(dog);

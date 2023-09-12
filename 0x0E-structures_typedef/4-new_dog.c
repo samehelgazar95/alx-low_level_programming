@@ -30,8 +30,8 @@ int _strlen(char *str)
 char *strCopyDyn(char *str)
 {
 	int i;
-	int nameLen = _strlen(str);
-	char *temp = malloc(sizeof(char) * nameLen + 1);
+	int strLen = _strlen(str);
+	char *temp = malloc(sizeof(char) * strLen + 1);
 
 	if (temp == NULL)
 		return (NULL);
@@ -57,11 +57,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 
 	if (!name || age < 0 || !owner)
-	{
 		return (NULL);
-	}
 
-	dog = malloc(sizeof(dog_t));
+	dog = (dog_t *)malloc(sizeof(dog_t));
 
 	if (dog == NULL)
 		return (NULL);

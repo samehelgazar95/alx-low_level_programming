@@ -4,7 +4,7 @@
 /**
  * free_dog- free dogs and run away
  * @d: the dog or the dogs
- * Return Nothing, it just frees dog or dogs
+ * Return: Nothing, it just frees dog or dogs
 */
 
 void free_dog(dog_t *d)

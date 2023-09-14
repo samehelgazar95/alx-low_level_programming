@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * print_numbers -  prints numbers, followed by a new line.
  * @separator: separator between args
@@ -14,7 +15,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list list;
 
 	if (separator == NULL)
+	{
+		printf("\n");
 		exit(1);
+	}
 
 	va_start(list, n);
 

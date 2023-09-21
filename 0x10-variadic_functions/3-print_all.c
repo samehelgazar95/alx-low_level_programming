@@ -53,7 +53,7 @@ void f_string(char *separator, va_list args)
 
 /**
  * print_all - prints anything
- * @format: for to use for printing
+g* @format: for to use for printing
  * Return: Nothing
 */
 

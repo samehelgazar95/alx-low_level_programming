@@ -1,1 +1,1 @@
-Hello, Dennis Ritchie, Brian Kernighan
+README

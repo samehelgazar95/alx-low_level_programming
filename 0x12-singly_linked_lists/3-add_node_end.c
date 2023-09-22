@@ -6,6 +6,7 @@
  * @str: the string
  * Return: return the head with new position
 */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *temp = malloc(sizeof(list_t));

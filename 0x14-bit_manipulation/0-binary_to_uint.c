@@ -28,7 +28,7 @@ unsigned int twoPow(int powVal)
 
 	if (powVal < 0)
 		return (0);
-	
+
 	while (powVal > 0)
 	{
 		sum *= 2;

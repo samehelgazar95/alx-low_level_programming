@@ -30,7 +30,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd;
 	ssize_t bytes_wrote = 0;
-	int len = stringlen(text_content);
+	int len = text_content ? stringlen(text_content) : 0;
 
 	if (!filename)
 		return (-1);

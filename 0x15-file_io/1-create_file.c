@@ -13,20 +13,21 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
+	int bytes_wrote = 0, len = strlen(text_content);
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
-	if (text_content == NULL)
-		strcpy(text_content, "");
-
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (fd < 0)
 		return (-1);
 
-	if (write(fd, text_content, sizeof(text_content)) < 0)
+	if (len)
+		bytes_wrote = write(fd, text_content, len);
+
+	if (close(fd) < 0)
 		return (-1);
 
-	return (1);
+	return (bytes_wrote == len ? 1 : -1);
 }

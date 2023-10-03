@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (read_count < 0)
 		return (0);
 
-	dprintf(STDOUT_FILENO, "%s", read_text);
+	printf("%s", read_text);
 
 
 	if (close(fd) < 0)

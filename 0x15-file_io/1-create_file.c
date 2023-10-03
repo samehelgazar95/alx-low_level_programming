@@ -5,7 +5,7 @@
 /**
  * create_file- function that creates a file.
  * @filename: the file
- * @text_context: the text
+ * @text_content: the text
  * Return: 1 for success, -1 for failure
 */
 

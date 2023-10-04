@@ -44,8 +44,10 @@ int main(int ac, char **av)
 	if (bytes < 0)
 		dprintf(STDERR_FILENO, ERR_READ, av[1]), exit(98);
 
-	if (close(fd_from) == -1 || close(fd_to == -1))
+	if (close(fd_from) == -1)
 		dprintf(STDERR_FILENO, ERR_CLOSE, fd_from), exit(100);
 
+	if (close(fd_to == -1))
+		dprintf(STDERR_FILENO, ERR_CLOSE, fd_to), exit(100);
 	return (EXIT_SUCCESS);
 }

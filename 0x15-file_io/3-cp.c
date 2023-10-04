@@ -35,7 +35,7 @@ int main(int ac, char **av)
 	if (fd_to < 0)
 		dprintf(STDERR_FILENO, ERR_WRITE, av[1]), exit(99);
 
-	while ((bytes = read(fd_from, buffer, 1024)) < 0)
+	while ((bytes = read(fd_from, buffer, 1024)) > 0)
 	{
 		if ((write(fd_to, buffer, bytes)) != bytes)
 			dprintf(STDERR_FILENO, ERR_WRITE, av[2]), exit(99);

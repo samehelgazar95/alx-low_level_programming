@@ -43,18 +43,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	char *new_val;
 	hash_node_t *current, *new_node;
-	unsigned long int index = key_index((const unsigned char *)key, ht->size);
+	unsigned long int index;
 
 	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
 			key == NULL || strlen(key) == 0 || value == NULL)
 		return (0);
 
+	index = key_index((const unsigned char *)key, ht->size);
 	current = ht->array[index];
 	while (current != NULL)
 	{
 		if (strcmp(current->key, key) == 0)
 		{
 			new_val = strdup(value);
+			if (new_val == NULL)
+				return (0);
 			free(current->value);
 			current->value = strdup(new_val);
 			return (1);
